@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Expense tracker",
+    "slug": "Expense tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "backgroundColor": "#24180f",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+    }
+  }
+}
