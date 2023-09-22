@@ -15,11 +15,11 @@ const Calculator = () => {
         style={
           theme === "light"
             ? styles.container
-            : { backgroundColor: Colors.black }
+            : [styles.container, { backgroundColor: Colors.black }]
         }
       >
         <Switch
-          value={theme === "light"}
+          value={theme === "dark"}
           onValueChange={() => setTheme(theme === "light" ? "dark" : "light")}
         />
         <Keyboard />
@@ -34,19 +34,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: GlobalStyles.colors.primary700,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
     padding: 20,
   },
-  calculatorContainer: {
-    padding: 7,
-    backgroundColor: "white",
-    opacity: 0.4,
-    borderRadius: 4,
-    borderBottomRightRadius: 9,
-    borderTopLeftRadius: 9,
-    gap: 20,
-  },
+
   end: {
     backgroundColor: "plum",
   },

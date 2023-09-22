@@ -1,10 +1,17 @@
-import { useContext } from "react";
-import { TouchableOpacity, Text, View } from "react-native";
+import React,{ useContext } from "react";
+import { TouchableOpacity, Text } from "react-native";
 
 import { Styles } from "./styles/Calc";
 import { ThemeContext } from "./context/ThemeContext";
 
-const Button = ({ title, onPress, isBlue, isGray }) => {
+interface ButtonProps{
+  onPress:()=>void,
+  title: string,
+  isBlue?: boolean,
+  isGray?: boolean
+}
+
+const Btn = ({ title, onPress, isBlue, isGray }: ButtonProps) => {
   const theme = useContext(ThemeContext);
 
   return (
@@ -27,12 +34,11 @@ const Button = ({ title, onPress, isBlue, isGray }) => {
             : theme === "dark"
             ? Styles.smallTextLight
             : Styles.smallTextDark
-        }
-      >
+        }>
         {title}
       </Text>
     </TouchableOpacity>
   );
 };
 
-export default Button;
+export default Btn;

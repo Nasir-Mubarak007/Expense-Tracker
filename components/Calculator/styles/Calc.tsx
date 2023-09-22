@@ -3,50 +3,50 @@ import { Colors } from "./Colors";
 
 export const Styles = StyleSheet.create({
   btnBlue: {
-    width: 60,
-    height: 60,
-    borderRadius: 18,
+    width: 50,
+    height: 50,
+    borderRadius: 16,
     backgroundColor: Colors.blue,
     justifyContent: "center",
     alignItems: "center",
-    margin: 6,
+    margin: 4,
   },
 
   btnDark: {
-    width: 60,
-    height: 60,
-    borderRadius: 18,
+    width: 50,
+    height: 50,
+    borderRadius: 16,
     backgroundColor: Colors.btnDark,
     justifyContent: "center",
     alignItems: "center",
-    margin: 6,
+    margin: 4,
   },
   btnLight: {
-    width: 60,
-    height: 60,
-    borderRadius: 18,
+    width: 50,
+    height: 50,
+    borderRadius: 16,
     backgroundColor: Colors.white,
     justifyContent: "center",
     alignItems: "center",
-    margin: 6,
+    margin: 4,
   },
   btnGray: {
-    width: 60,
-    height: 60,
-    borderRadius: 18,
+    width: 50,
+    height: 50,
+    borderRadius: 16,
     backgroundColor: Colors.gray,
     justifyContent: "center",
     alignItems: "center",
-    margin: 6,
+    margin: 4,
   },
 
   smallTextLight: {
-    fontSize: 24,
+    fontSize: 14,
     color: Colors.white,
   },
 
   smallTextDark: {
-    fontSize: 24,
+    fontSize: 14,
     color: Colors.black,
   },
 
@@ -57,20 +57,22 @@ export const Styles = StyleSheet.create({
 
   viewBottom: {
     position: "absolute",
-    bottom: 50,
+    bottom: 30,
   },
 
   screenFirstNumber: {
-    fontSize: 72,
+    fontSize: 42,
     color: Colors.gray,
     fontWeight: "200",
     alignSelf: "flex-end",
   },
 
   screenSecondNumber: {
-    fontSize: 37,
+    fontSize: 27,
     color: Colors.gray,
     fontWeight: "200",
     alignSelf: "flex-end",
+    flexDirection: "column",
+    alignItems: "flex-end",
   },
 });
